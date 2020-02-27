@@ -1,7 +1,7 @@
 # eq-lookup-suggestions-data
 eQ Lookup Suggestions Data
 
-This repository contains the data-sets required for lookup questions in eq-questionnaire-schemas
+This repository contains versioned TextField suggestion data for eq-questionnaire-runner
 
 | Datasets |       |
 | ------- |-------|
