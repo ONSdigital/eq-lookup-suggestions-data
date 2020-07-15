@@ -7,8 +7,8 @@ import json
 
 def generate_json_files():
 
-    source_directory = './source-data/'
-    output_directory = './data/'
+    source_directory = './source-data/gb'
+    output_directory = './data/gb'
 
     for source_file_name in os.listdir(source_directory):
 
