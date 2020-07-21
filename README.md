@@ -30,6 +30,6 @@ Separate source data files are provided for Northern Ireland at `./source-data/n
 
 json files can be generated from the source csv files using `./scripts/convert_csv_to_json.py`
 
-- default source file location `./source-data/gb`
+- csv source file root directory `./source-data`
 
-- default json file output location `./data/gb`
+- json output file root directory `./data`
