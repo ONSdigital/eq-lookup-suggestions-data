@@ -10,9 +10,10 @@ def generate_json_files():
     source_root = './source-data'
     output_root = './data'
 
-    for source_directory, dirs, files in os.walk(source_root):
 
-        source_directory_name = source_directory.split(os.path.sep)[-1]
+    for source_directory_name in os.listdir(source_root):
+
+        source_directory = os.path.join(source_root, source_directory_name)
 
         for source_file_name in os.listdir(source_directory):
 
@@ -36,7 +37,7 @@ def generate_json_files():
                         json.dump(json_data, f, indent=3, ensure_ascii=False)
                 except FileNotFoundError:
                     print(
-                        f"Output could not be written to {output_file_location}\nDoes the output folder {output_root}/{source_directory_name} exist?"
+                        f"Output could not be written to {output_file_location}\nDoes the output folder {output_root}/{source_directory} exist?"
                     )
                     return
 
