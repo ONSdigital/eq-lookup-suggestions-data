@@ -14,9 +14,9 @@ This repository contains versioned TextField suggestion data for eq-questionnair
 
 Source data files are provided by the business as single column csv files. These can be manually added/updated in this repository at `./source-data`
 
-Separate source data files are provided for the Northern Ireland region at `./source-data/ni`. The non Northern Ireland region source data files are located at `./source-data/gb`
+Separate source data files are provided for the Northern Ireland region at `./source-data/ni/en` and the non Northern Ireland (GB) region at `./source-data/gb`
 
-Separate source data files are provided for the Welsh and English language versions of the suggestions lists at `./source-data/gb/cy` and `./source-data/gb/en` respectively.
+For the GB region, separate source data files are provided for the Welsh and English language versions of the suggestions lists at `./source-data/gb/cy` and `./source-data/gb/en` respectively.
 
 - source files to be provided by the business named for the above datasets
 
