@@ -12,9 +12,11 @@ This repository contains versioned TextField suggestion data for eq-questionnair
 | religions.json | List of religions |
 
 
-Source data files are provided by the business as multiple column csv files. These can be manually added/updated in this repository at `./source-data`
+Source data files are provided by the business as single column csv files. These can be manually added/updated in this repository at `./source-data`
 
-Separate source data files are provided for Northern Ireland at `./source-data/ni`. The non Northern Ireland source data files are located at `./source-data/gb` 
+Separate source data files are provided for the Northern Ireland region at `./source-data/ni`. The non Northern Ireland region source data files are located at `./source-data/gb`
+
+Separate source data files are provided for the Welsh and English language versions of the suggestions lists at `./source-data/gb/cy` and `./source-data/gb/en` respectively.
 
 - source files to be provided by the business named for the above datasets
 
@@ -22,14 +24,12 @@ Separate source data files are provided for Northern Ireland at `./source-data/n
 
 - any values including commas should be double quoted
 
-- header row to contain comma separated language_codes (i.e `en-gb`, `cy`, `ga`, `eo`)
+- data rows to contain lookup terms (as to be presented in the lookup lists)
 
-- data rows to contain comma separated translated lookup values (as to be presented in the lookup lists)
-
-- null values for a given language item can be provided by a non-spaced commas. This will result in that term not being presented as a suggestion for that language
-
-json files can be generated from the source csv files using `./scripts/convert_csv_to_json.py`
+json files can be generated from the source csv files using `./scripts/convert_csv_to_json.py`.
 
 - csv source file root directory `./source-data`
 
 - json output file root directory `./data`
+
+- two further levels of sub directories are expected corresponding to the `{region}` and `{language_code}` of the suggestions files respectively
