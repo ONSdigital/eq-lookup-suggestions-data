@@ -54,4 +54,4 @@ def generate_json_files():
 
 
 if __name__ == "__main__":
-        generate_json_files()
+    generate_json_files()
