@@ -37,7 +37,7 @@ def generate_json_files():
                             json_data.append(row.get('term'))
                     try:
                         with open(output_file_location, 'w', encoding='utf8') as f:
-                            json.dump(json_data, f, indent=3, ensure_ascii=False)
+                            json.dump(json_data, f, indent=4, ensure_ascii=False)
                             f.write("\n")
                     except FileNotFoundError:
                         print(
