@@ -29,6 +29,7 @@ DISABLE_LINTERS:
   - REPOSITORY_KINGFISHER # Overlaps with other secret scanners with higher runtime (7.24s)
   - REPOSITORY_BETTERLEAKS # Overlaps with secretlint; low incremental detection value
   - REPOSITORY_SYFT # Generates SBOM artifact but does not gate lint pass/fail for this repo
+  - REPOSITORY_OSV_SCANNER # Gives little value alongside dependabot CTE-339. Possibly to be reintroduced closer to release
 
 ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
   - GITHUB_TOKEN
